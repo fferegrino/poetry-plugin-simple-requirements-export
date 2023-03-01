@@ -41,5 +41,6 @@ class SimpleRequirementsExportCommand(GroupCommand):
                 for requirement_line in requirements_file:
                     dependency, _, extras = requirement_line.partition(";")
                     dependency_name, _, version = dependency.partition("==")
+                    dependency_name, _, _ = dependency_name.partition("[")
                     bare_dependencies[dependency_name] = dependency.strip()
         return bare_dependencies

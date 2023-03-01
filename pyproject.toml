@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-plugin-simple-requirements-export"
-version = "0.1.0"
+version = "0.1.1"
 description = "A different way to export your poetry requirements as a requirements.txt file"
 authors = ["Antonio Feregrino <antonio.feregrino@gmail.com>"]
 license = "MIT"
