@@ -14,7 +14,6 @@ class SimpleRequirementsExportCommand(GroupCommand):
         bare_dependencies = self.get_original_dependencies()
 
         dependencies_in_pyproject = self.get_toml_dependencies()
-
         with open("requirements.txt", "w") as requirements_file:
             for dependency in dependencies_in_pyproject:
                 if dependency in bare_dependencies:
